@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>siltas | 会員登録</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div id="top">
+        <!---------ヘッダー--------->
+        <div id="title">
+            <h1>siltas</h1>
+        </div>
+        <div id="navArea">
+            <nav>
+                <div class="inner-top">
+                    <div class="nav-right">
+                        <ul>
+                            <li><a href="login.html">ログイン</a></li>
+                            <li><a href="beginner.html">初めての方へ</a></li> 
+                            <li><a href="member.html">会員登録</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-left">
+                        <ul>
+                            <li><a href="index.html" class="btn btn-border">ホーム</a></li>
+                            <li><a href="index.html#news" class="btn btn-border">お知らせ</a></li>
+                            <li><a href="rental.html" class="btn btn-border">貸し教室</a></li>
+                            <li><a href="company.html" class="btn btn-border">会社案内</a></li>
+                            <li><a href="contact.html" class="btn btn-border">お問い合わせ</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-mobile">
+                        <ul> 
+                            <li><a href="index.html">ホーム</a></li>
+                            <li><a href="rental.html">貸し教室</a></li>
+                            <li><a href="company.html">会社案内</a></li>
+                            <li><a href="contact.html">お問い合わせ</a></li>         
+                            <li><a href="login.html">ログイン</a></li>
+                            <li><a href="beginner.html">初めての方へ</a></li> 
+                            <li><a href="member.html">会員登録</a></li>
+                            <li><a href="rental.html">教室のご案内</a></li> 
+                            <li><a href="appoint.html">ご利用までの流れ</a></li> 
+                            <li><a href="option.html">オプション</a></li> 
+                            <li><a href="use.html">利用規約</a></li> 
+                            <li><a href="question.html">よくあるご質問</a></li> 
+                            <li><a href="reserve.html">空席確認・予約</a></li> 
+                            <li><a href="access.html">アクセス</a></li> 
+                       </ul>
+                    </div>  
+                </div>
+            </nav>
+
+            <div class="toggle_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div id="mask"></div> 
+        
+        </div> 
+    </div>
+
+    <!---<div id="sub">
+        <img src="">
+        <p>ここに写真入れる</p>
+    </div>--->
+
+    <!----サイドバー------>
+    <article>
+        <div class="side">
+            <h3>コンテンツ一覧</h3>
+            <ul>
+                <li><a href="rental.html">教室のご案内</a></li>
+                <li><a href="appoint.html">ご利用までの流れ</a></li>
+                <li><a href="option.html">オプション</a></li>
+                <li><a href="use.html">利用規約</a></li>
+                <li><a href="question.html">よくあるご質問</a></li>
+                <li><a href="reserve.html">空席確認・予約</a></li>
+                <li><a href="access.html">アクセス</a></li> 
+            </ul>
+            
+            <h3>営業時間・ご利用時間</h3>
+            <p>◆窓口営業時間<br></p>
+            <p>平日10:00~18:00</p>
+            <p>◆教室利用可能時間<br></p>
+            <p>平日・土・日・祝</p>
+            <p>9:00~21:00</p>
+            <p>◆休業日<br></p>
+            <p>年末年始・お盆・ビル休業日</p>
+
+            <h3>お問い合わせ</h3>
+            <p>siltas事務局</p>
+            <p>〒530-0001</p>
+            <p>大阪市北区梅田1-1-3</p>
+            <p>大阪駅前第3ビル10F</p>
+            <p>TEL : 050-5306-1460</p>
+        </div>
+
+        <!------------ログイン------------->
+        <div class="contents">
+            <div id="member">
+                <h1 class="member">会員登録</h1>
+                <div class="member-image">
+                    <img src="image/entry_detail.jpg">
+                </div>
+                <p>会員登録前に必ず<a href="use.html">利用規約</a>のご確認をお願いいたします。</p>
+                <p>必要事項をご入力のうえ『確認する』をクリックしてください。<br>
+                ※印が付いている項目は入力が必須となっております。</p>
+                <p>※メールアドレス : ログインID及び予約確認メール受信用となります。</p>
+                
+                <h4>■基本情報</h4>
+                <form method="post" action="/sample.php" enctype="multipart/form-data">
+
+                    <div>
+                        <label for="name">名前（漢字）：</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div>
+                        <label for="name">名前（フリガナ）</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div>
+                        <label for="mail">メールアドレス※</label>
+                        <input type="email" id="mail" name="mail">
+                    </div>
+                    <div>
+                        <label for="mail">メールアドレス 確認用※</label>
+                        <input type="email" id="mail" name="mail">
+                    </div>
+                    <div>
+                        <label for="password">パスワード※</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div>
+                        <label for="password">パスワード 確認用※</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div>
+                        <label for="nickname">ログイン時表示名<br>(ニックネーム・社名等)※</label>
+                        <input type="text" id="nickname" name="nickname">
+                    </div>
+                    <div>
+                        <label for="gender">性別</label>
+                        <label for="man"  ><input type="radio" id="man"   name="sex" value="man"  >男</label>
+                        <label for="woman"><input type="radio" id="woman" name="sex" value="woman">女</label>
+                    </div>
+                    
+                    <div> 
+                        <label for="birth-year">生年月日</label> 
+                        <select id="birth-year" name="birth-year"> 
+                            <option value="">年</option> <!-- ここに必要な年を追加 -->
+                            <option value="1950">1950年</option> 
+                            <option value="1951">1951年</option> 
+                            <option value="1952">1952年</option> 
+                            <option value="1953">1953年</option> 
+                            <option value="1954">1954年</option> 
+                            <option value="1955">1955年</option> 
+                            <option value="1956">1956年</option> 
+                            <option value="1957">1957年</option> 
+                            <option value="1958">1958年</option> 
+                            <option value="1959">1959年</option> 
+                            <option value="1960">1960年</option> 
+                            <option value="1961">1961年</option> 
+                            <option value="1962">1962年</option> 
+                            <option value="1963">1963年</option> 
+                            <option value="1964">1964年</option> 
+                            <option value="1965">1965年</option> 
+                            <option value="1966">1966年</option> 
+                            <option value="1967">1967年</option> 
+                            <option value="1968">1968年</option> 
+                            <option value="1969">1969年</option> 
+                            <option value="1970">1970年</option>
+                            <option value="1971">1971年</option> 
+                            <option value="1972">1972年</option> 
+                            <option value="1973">1973年</option>
+                            <option value="1974">1974年</option> 
+                            <option value="1975">1975年</option> 
+                            <option value="1976">1976年</option>
+                            <option value="1977">1977年</option> 
+                            <option value="1978">1978年</option> 
+                            <option value="1979">1979年</option>
+                            <option value="1980">1980年</option> 
+                            <option value="1981">1981年</option> 
+                            <option value="1982">1982年</option>
+                            <option value="1983">1983年</option> 
+                            <option value="1984">1984年</option> 
+                            <option value="1985">1985年</option> 
+                            <option value="1986">1986年</option> 
+                            <option value="1987">1987年</option>
+                            <option value="1988">1988年</option> 
+                            <option value="1989">1989年</option> 
+                            <option value="1990">1990年</option>
+                            <option value="1991">1991年</option> 
+                            <option value="1992">1992年</option> 
+                            <option value="1993">1993年</option>
+                            <option value="1994">1994年</option> 
+                            <option value="1995">1995年</option> 
+                            <option value="1996">1996年</option> 
+                            <option value="1997">1997年</option> 
+                            <option value="1998">1998年</option> 
+                            <option value="1999">1999年</option>
+                            <option value="2000">2000年</option> 
+                            <option value="2001">2001年</option> 
+                            <option value="2002">2002年</option>
+                            <option value="2003">2003年</option> 
+                            <option value="2004">2004年</option> 
+                            <option value="2005">2005年</option>
+                            <option value="2006">2006年</option> 
+                            <option value="2007">2007年</option> 
+                            <option value="2008">2008年</option>
+                            <option value="2009">2009年</option> 
+                            <option value="2010">2010年</option> 
+                            <option value="2011">2011年</option>
+                            <option value="2012">2012年</option>
+                            <option value="2013">2013年</option>
+                            <option value="2014">2014年</option>
+                            <option value="2015">2015年</option>
+                        </select> 
+                        <select id="birth-month" name="birth-month"> 
+                            <option value="">月</option> 
+                            <option value="1">1月</option> 
+                            <option value="2">2月</option> 
+                            <option value="3">3月</option> 
+                            <option value="4">4月</option> 
+                            <option value="5">5月</option> 
+                            <option value="6">6月</option> 
+                            <option value="7">7月</option> 
+                            <option value="8">8月</option> 
+                            <option value="9">9月</option> 
+                            <option value="10">10月</option> 
+                            <option value="11">11月</option> 
+                            <option value="12">12月</option> 
+                        </select> 
+                        <select id="birth-day" name="birth-day"> 
+                            <option value="">日</option> 
+                            <option value="1">1日</option> 
+                            <option value="2">2日</option> 
+                            <option value="3">3日</option>
+                            <option value="4">4日</option> 
+                            <option value="5">5日</option> 
+                            <option value="6">6日</option>
+                            <option value="7">7日</option> 
+                            <option value="8">8日</option> 
+                            <option value="9">9日</option>
+                            <option value="10">10日</option> 
+                            <option value="11">11日</option> 
+                            <option value="12">12日</option>
+                            <option value="13">13日</option> 
+                            <option value="14">14日</option> 
+                            <option value="15">15日</option>
+                            <option value="16">16日</option> 
+                            <option value="17">17日</option>
+                            <option value="18">18日</option> 
+                            <option value="19">19日</option> 
+                            <option value="20">20日</option>
+                            <option value="21">21日</option>
+                            <option value="22">22日</option>
+                            <option value="23">23日</option>
+                            <option value="24">24日</option>
+                            <option value="25">25日</option>
+                            <option value="26">26日</option>
+                            <option value="27">27日</option>
+                            <option value="28">28日</option>
+                            <option value="29">29日</option>
+                            <option value="30">30日</option>
+                            <option value="31">31日</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="trigger">貸し教室siltasをお知りになったきっかけ </label>
+                            <select id="inquiry_type" name="inquiry_type"> 
+                                <option value="select">---未選択---</option> 
+                                <option value="net">インターネット</option> 
+                                <option value="direct_mail">ダイレクトメール</option> 
+                                <option value="posting">ポスティングチラシ</option> 
+                                <option value="fax">ファックスDM</option> 
+                                <option value="introduction">ご紹介</option>  
+                                <option value="others">その他</option> 
+                            </select>
+                    </div>
+
+                    <h4>■連絡先</h4>
+                    <div>
+                        <label for="address">住所</label>
+                        <input type="text" id="address" name="address">
+                    </div>
+                    <div>
+                        <label for="number">電話番号</label>
+                        <input type="text" id="number" name="number">
+                    </div>
+                    <div>
+                        <label for="mail">携帯メールアドレス</label>
+                        <input type="text" id="mail" name="mail">
+                    </div>
+                </form>
+            </div> 
+            <div class="member-button">
+                <input type="submit" value="データを送信する">
+            </div>
+        </div>
+    </article>
+
+    <div class="gotop">
+        <a href="#top"></a>
+    </div>
+    <div id="footer">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="use.html">利用規約</a></li>
+            <li><a href="policy.html">個人情報保護方針</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+            <li><a href="index.html#news">お知らせ</a></li>
+        </ul>
+    
+        <p class="copyright">Copyright © 2024 Social Bridge Co.,Ltd. All Rights Reserved.</p>   
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>

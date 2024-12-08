@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>siltas | 空室状況確認</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
+    <script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js"></script>
+</head>
+<body>
+    <div id="top">
+        <!---------ヘッダー--------->
+        <div id="title">
+            <h1>siltas</h1>
+        </div>
+        <div id="navArea">
+            <nav>
+                <div class="inner-top">
+                    <div class="nav-right">
+                        <ul>
+                            <li><a href="login.html">ログイン</a></li>
+                            <li><a href="beginner.html">初めての方へ</a></li>
+                            <li><a href="member.html">会員登録</a></li> 
+                        </ul>
+                    </div>
+                    <div class="nav-left">
+                        <ul>
+                            <li><a href="index.html" class="btn btn-border">ホーム</a></li>
+                            <li><a href="index.html#news" class="btn btn-border">お知らせ</a></li>
+                            <li><a href="rental.html" class="btn btn-border">貸し教室</a></li>
+                            <li><a href="company.html" class="btn btn-border">会社案内</a></li>
+                            <li><a href="contact.html" class="btn btn-border">お問い合わせ</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-mobile">
+                        <ul> 
+                            <li><a href="index.html">ホーム</a></li>
+                            <li><a href="rental.html">貸し教室</a></li>
+                            <li><a href="company.html">会社案内</a></li>
+                            <li><a href="contact.html">お問い合わせ</a></li>         
+                            <li><a href="login.html">ログイン</a></li>
+                            <li><a href="beginner.html">初めての方へ</a></li> 
+                            <li><a href="member.html">会員登録</a></li>
+                            <li><a href="rental.html">教室のご案内</a></li> 
+                            <li><a href="appoint.html">ご利用までの流れ</a></li> 
+                            <li><a href="option.html">オプション</a></li> 
+                            <li><a href="use.html">利用規約</a></li> 
+                            <li><a href="question.html">よくあるご質問</a></li> 
+                            <li><a href="reserve.html">空席確認・予約</a></li> 
+                            <li><a href="access.html">アクセス</a></li> 
+                       </ul>
+                    </div>  
+                </div>
+            </nav>
+
+            <div class="toggle_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div id="mask"></div>
+        </div> 
+    </div>
+
+    <!----<div id="sub">
+        <img src="">
+        <p>ここに写真入れる</p>
+    </div>---->
+
+    <!----サイドバー------>
+    <article>
+        <div class="side">
+            <h3>コンテンツ一覧</h3>
+            <ul>
+                <li><a href="rental.html">教室のご案内</a></li>
+                <li><a href="appoint.html">ご利用までの流れ</a></li>
+                <li><a href="option.html">オプション</a></li>
+                <li><a href="use.html">利用規約</a></li>
+                <li><a href="question.html">よくあるご質問</a></li>
+                <li><a href="reserve.html">空席確認・予約</a></li>
+                <li><a href="access.html">アクセス</a></li> 
+            </ul>
+            
+            <h3>営業時間・ご利用時間</h3>
+            <p>◆窓口営業時間<br></p>
+            <p>平日10:00~18:00</p>
+            <p>◆教室利用可能時間<br></p>
+            <p>平日・土・日・祝</p>
+            <p>9:00~21:00</p>
+            <p>◆休業日<br></p>
+            <p>年末年始・お盆・ビル休業日</p>
+
+            <h3>お問い合わせ</h3>
+            <p>siltas事務局</p>
+            <p>〒530-0001</p>
+            <p>大阪市北区梅田1-1-3</p>
+            <p>大阪駅前第3ビル10F</p>
+            <p>TEL : 050-5306-1460</p>
+        </div>
+
+        <!---------予約方法---------->
+        <div class="contents">
+            <div id="reserve">
+                <h1 class="reserve">ご予約方法</h1>
+                <div class="content-box">
+                    <P class="point01">※貸し教室のご予約は当月より２ヶ月先（月単位）までが可能です。</P>
+                    <p class="point01"> ３ヶ月先のご予約はご利用月の２ヶ月前の１日から予約可能となりますので、ご注意ください。</p>
+                    <p>①ログインしてから予約フォームへお進みください。</p>
+                    <p>②カレンダーから予約したい日付をクリック。</p>
+                    <p>③各教室のタイムテーブルから、予約したい開始時刻をクリック。</p>
+                    <p>④予約内容を指定してご予約ください。</p>  
+                </div>
+                <div class="content-box">
+                    <p>当日・翌日等、ご利用直近のお申込は対応できかねる場合があります。</p>
+                    <p>また、ご利用日から3日以内のお申込の場合はお電話にてお問い合わせください。</p>
+                    <p class="point03">TEL　050-5306-1460  （窓口営業時間 平日10:00～18:00）</p>
+                </div>
+                <h1 class="reserve">ご予約のキャンセル</h1>
+                <div class="content-box">
+                    <div class="reserve-image">
+                        <img src="image/room_appoint_tos.jpg">
+                    </div>
+                    <p class="point01">ログインして、マイページから「変更・キャンセル」をしてください。</p>
+                    <p class="point02">※ご予約は60分単位です。（最低60分からのご利用となります）</p>
+                    <p class="point02">※準備・片付け・参加者の入退場等に時間を要する場合は、必ずその時間も含めたご予約をお願いいたします。<br>
+                    （ご利用開始時の受付は10分前から可能ですが、入室は予約時間ちょうどからとなります）</p>
+                    <p class="point02">※ご利用終了時の受付の際に10分以上経過していた場合、30分区切り（切り上げ計算）で延長料金を頂戴します。</p>
+                </div>
+
+                <h1 class="reserve">タイムテーブル</h1>
+                <label for="calendar">★日付を選択してください : </label>
+                <input type="date" id="calendar">
+                <h2 id="selected-date"></h2>
+
+
+                    <div class="content-box">
+                        <h3 class="terms">〇梅田教室</h3>
+                        <div class="js-scrollable">
+                            <table id="timetable" class="table-timetable"> 
+                                <thead> 
+                                    <tr> 
+                                        <th>部屋</th> 
+                                        <th>定員</th> 
+                                        <th>09:00</th> 
+                                        <th>10:00</th> 
+                                        <th>11:00</th> 
+                                        <th>12:00</th> 
+                                        <th>13:00</th> 
+                                        <th>14:00</th> 
+                                        <th>15:00</th> 
+                                        <th>16:00</th> 
+                                        <th>17:00</th> 
+                                        <th>18:00</th> 
+                                        <th>19:00</th> 
+                                        <th>20:00</th> 
+                                    </tr> 
+                                </thead>
+                                <tbody> 
+                                    <tr> 
+                                        <td>10F-C</td> 
+                                        <td>20名</td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                    </tr>
+                                    <tr> 
+                                        <td>17F-A</td> 
+                                        <td>30名</td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                    </tr>
+                                    <tr> 
+                                        <td>17F-B</td> 
+                                        <td>30名</td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                    </tr>
+                                    <tr> 
+                                        <td>17F-C</td> 
+                                        <td>32名</td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                    </tr>
+                                    <tr> 
+                                        <td>20F-A</td> 
+                                        <td>30名</td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                    </tr>
+                                    <tr> 
+                                        <td>20F-B</td> 
+                                        <td>30名</td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                    </tr>
+                                    <tr> 
+                                        <td>21F-A</td> 
+                                        <td>30名</td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                    </tr>
+                                    <tr> 
+                                        <td>21F-B</td> 
+                                        <td>30名</td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                    </tr>
+                                    <tr> 
+                                        <td>21F-C</td> 
+                                        <td>30名</td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="content-box">
+                        <h3 class="terms">〇なんば教室</h3>
+                        <div class="js-scrollable">
+                            <table id="timetable" class="table-timetable"> 
+                                <thead> 
+                                    <tr> 
+                                        <th>部屋</th> 
+                                        <th>定員</th> 
+                                        <th>09:00</th> 
+                                        <th>10:00</th> 
+                                        <th>11:00</th> 
+                                        <th>12:00</th> 
+                                        <th>13:00</th> 
+                                        <th>14:00</th> 
+                                        <th>15:00</th> 
+                                        <th>16:00</th> 
+                                        <th>17:00</th> 
+                                        <th>18:00</th> 
+                                        <th>19:00</th> 
+                                        <th>20:00</th> 
+                                    </tr> 
+                                </thead>
+                                <tbody> 
+                                    <tr> 
+                                        <td>7F-A</td> 
+                                        <td>30名</td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                    </tr>
+                                    <tr> 
+                                        <td>7F-B</td> 
+                                        <td>20名</td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                    </tr>
+                                    <tr> 
+                                        <td>7F-C</td> 
+                                        <td>28名</td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                    </tr>
+                                    <tr> 
+                                        <td>7F-D</td> 
+                                        <td>30名</td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                        <td></td> 
+                                    </tr>
+                                </tbody>
+                            </table> 
+                        </div>
+                    </div>           
+                </div>
+
+                <div class="reserve01">
+                    <p>当日・翌日等、ご利用直近のお申込は対応できかねる場合があります。</p>
+                    <p>また、ご利用日から3日以内のお申込の場合はお電話にてお問い合わせください。</p>
+                    <p class="point05">TEL　050-5306-1460  （窓口営業時間 平日10:00～18:00）</p>
+                </div>
+
+            </div>
+        </div>
+    
+    </article>
+
+    <div class="gotop">
+        <a href="#top"></a>
+    </div>
+    <div id="footer">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="use.html">利用規約</a></li>
+            <li><a href="policy.html">個人情報保護方針</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+            <li><a href="index.html#news">お知らせ</a></li>
+        </ul>
+    
+        <p class="copyright">Copyright © 2024 Social Bridge Co.,Ltd. All Rights Reserved.</p>   
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
